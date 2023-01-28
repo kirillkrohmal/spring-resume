@@ -66,6 +66,18 @@ ALTER TABLE certificate_seq OWNER TO resume;
 -- Name: course; Type: TABLE; Schema: public; Owner: resume
 --
 
+CREATE TABLE contacts
+(
+    id bigint NOT NULL,
+    skype character varying(50) NOT NULL,
+    vkontakte character varying(255) NOT NULL,
+    linkedin character varying(255) NOT NULL,
+    github character varying(255) NOT NULL,
+    stackoverflow character varying(255) NOT NULL,
+
+    CONSTRAINT contacts_pkey PRIMARY KEY (id)
+);
+
 CREATE TABLE course (
                         id bigint NOT NULL,
                         id_profile bigint NOT NULL,
