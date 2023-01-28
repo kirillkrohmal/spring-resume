@@ -1,4 +1,8 @@
 package net.devstudy.resume.entity;
 
-public abstract class AbstractEntity {
+import net.devstudy.resume.model.AbstractModel;
+
+import java.io.Serializable;
+
+public abstract class AbstractEntity<T> extends AbstractModel implements Serializable {
 }
