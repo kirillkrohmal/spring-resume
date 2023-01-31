@@ -12,12 +12,7 @@ import static java.lang.annotation.ElementType.ANNOTATION_TYPE;
 import static java.lang.annotation.ElementType.TYPE;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
-/**
- * 
- * 
- * @author devstudy
- * @see http://devstudy.net
- */
+
 @Target({ TYPE, ANNOTATION_TYPE })
 @Retention(RUNTIME)
 @Constraint(validatedBy = FirstFieldLessThanSecondConstraintValidator.class)
